@@ -145,6 +145,7 @@ export default function ContactSection() {
               whileTap={{ scale: 0.98 }}
               className="w-full bg-[#04dd2a] text-white py-3 rounded-lg 
                        hover:bg-[#04dd2a]/90 transition-colors"
+              onClick={() => window.open(`https://wa.me/918333008904?text=I am interested in buying from unlistedbazaar ${contactInfo.address} ${contactInfo.email} ${contactInfo.phone}`)}
             >
               Send Message
             </motion.button>
