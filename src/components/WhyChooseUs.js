@@ -15,7 +15,7 @@ const features = [
     title: 'Price Discovery',
     description: 'Get the most accurate and up-to-date pricing information',
     icon: ChartBarIcon,
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000'
+    image: 'https://images.unsplash.com/photo-1581090306351-549d4d93d34d?q=80&w=1000'
   },
   {
     title: 'Up to Date Inventory',
@@ -96,14 +96,29 @@ export default function WhyChooseUs() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="mt-16 text-center"
+          className="mt-24 text-center relative"
         >
-          <h3 className="text-2xl font-bold mb-4">
-            Buying Unlisted Stock is Hard, But its Price Discovery is Harder
-          </h3>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            We simplify both processes with our extensive network and market expertise
-          </p>
+          <div className="absolute inset-0 bg-gradient-to-r from-green-50 via-white to-green-50 -skew-y-2 transform" />
+          <div className="relative z-10 py-16">
+            <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
+              Buying Unlisted Stock is Hard,
+              <br />
+              But its Price Discovery is Harder
+            </h3>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto mb-8">
+              We simplify both processes with our extensive network and market expertise
+            </p>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-[#04dd2a] text-white px-8 py-4 rounded-lg 
+                       text-lg font-semibold shadow-lg hover:shadow-xl 
+                       transition-all duration-300"
+              onClick={() => window.open('https://wa.me/+919163602481', '_blank')}
+            >
+              Invest like a VC Today
+            </motion.button>
+          </div>
         </motion.div>
       </div>
     </section>

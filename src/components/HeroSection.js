@@ -13,12 +13,20 @@ export default function HeroSection() {
         >
           <div className="mb-4">
             <span className="inline-block px-4 py-2 rounded-full bg-[#04dd2a]/10 text-[#04dd2a] font-medium">
-              Unlisted Space for <span className="font-bold">Sale</span>
+              Unlisted Space for{' '}
+              <span className="relative inline-flex items-center">
+                <span className="relative z-10 font-bold px-3 py-1 
+                               bg-red-500 text-white 
+                               border border-dashed border-white
+                               transform -skew-x-12">
+                  SALE
+                </span>
+              </span>
             </span>
           </div>
           
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Invest in a <span className="text-5xl md:text-7xl text-[#04dd2a]">VC</span> in 
+            Invest like a <span className="text-5xl md:text-7xl text-[#04dd2a]">VC</span> in 
             the world of <span className="text-5xl md:text-7xl text-[#04dd2a]">PE</span>
           </h1>
           
