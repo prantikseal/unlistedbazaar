@@ -16,8 +16,7 @@ Name: ${formData.name}
 Mobile: ${formData.mobile}
 Shares: ${formData.shares}`;
     
-    // Replace with your WhatsApp number
-    window.open(`https://wa.me/919XXXXXXXXX?text=${encodeURIComponent(message)}`);
+    window.open(`https://wa.me/918333008904?text=${encodeURIComponent(message)}`);
     onClose();
   };
 

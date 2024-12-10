@@ -16,9 +16,9 @@ import {
 const contactInfo = {
   address: '123 Business District, Mumbai, Maharashtra 400001',
   email: 'contact@unlistedbazaar.com',
-  phone: '+91 98765 43210',
+    phone: '+91 83330 08904',
   social: [
-    { icon: FaWhatsapp, link: 'https://wa.me/919XXXXXXXXX', name: 'WhatsApp' },
+    { icon: FaWhatsapp, link: 'https://wa.me/918333008904', name: 'WhatsApp' },
     { icon: FaFacebook, link: '#', name: 'Facebook' },
     { icon: FaTwitter, link: '#', name: 'Twitter' },
     { icon: FaInstagram, link: '#', name: 'Instagram' },
