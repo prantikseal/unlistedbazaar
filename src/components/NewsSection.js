@@ -6,20 +6,20 @@ const newsArticles = [
   {
     title: 'The Rise of Unlisted Securities in India',
     date: 'March 15, 2024',
-    image: '/news/article1.jpg',
-    link: '#'
+    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1000',
+    link: 'https://www.moneycontrol.com/news/business/markets/unlisted-shares-what-are-they-and-should-you-invest-in-them-10308071.html'
   },
   {
     title: 'Why Pre-IPO Investments are Gaining Popularity',
     date: 'March 10, 2024',
-    image: '/news/article2.jpg',
-    link: '#'
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000',
+    link: 'https://economictimes.indiatimes.com/markets/ipos/fpos/pre-ipo-placement-meaning-benefits-risks-and-how-to-invest/articleshow/98163770.cms'
   },
   {
     title: 'Understanding the Unlisted Securities Market',
     date: 'March 5, 2024',
-    image: '/news/article3.jpg',
-    link: '#'
+    image: 'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?q=80&w=1000',
+    link: 'https://www.sebi.gov.in/legal/circulars/jan-2024/trading-in-unlisted-securities-by-alternative-investment-funds_81213.html'
   }
 ];
 

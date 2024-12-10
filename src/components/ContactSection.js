@@ -38,7 +38,7 @@ export default function ContactSection() {
         >
           <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
           <p className="text-xl text-gray-600">
-            We're here to help with all your unlisted securities needs
+            We&apos;re here to help with all your unlisted securities needs
           </p>
         </motion.div>
 

@@ -23,7 +23,7 @@ export default function HeroSection() {
           </h1>
           
           <p className="text-lg md:text-xl text-gray-600 mb-8">
-            Marketplace for untapped unlisted space involving VC's angels, 
+            Marketplace for untapped unlisted space involving VC&apos;s angels, 
             ESOPS and whole startup ecosystem
           </p>
           

@@ -15,37 +15,37 @@ const features = [
     title: 'Price Discovery',
     description: 'Get the most accurate and up-to-date pricing information',
     icon: ChartBarIcon,
-    image: '/features/price-discovery.jpg'
+    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000'
   },
   {
     title: 'Up to Date Inventory',
     description: 'Access real-time stock availability and market data',
     icon: ClockIcon,
-    image: '/features/inventory.jpg'
+    image: 'https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?q=80&w=1000'
   },
   {
     title: '10-20% Lesser Than Grey Market Price',
     description: 'Competitive pricing below market rates',
     icon: CurrencyDollarIcon,
-    image: '/features/pricing.jpg'
+    image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?q=80&w=1000'
   },
   {
     title: 'End to End Support',
     description: 'Complete assistance from purchase to delivery',
     icon: ShieldCheckIcon,
-    image: '/features/support.jpg'
+    image: 'https://images.unsplash.com/photo-1560472355-536de3962603?q=80&w=1000'
   },
   {
     title: 'Direct to Your Demat',
     description: 'Seamless transfer to your demat account',
     icon: TruckIcon,
-    image: '/features/demat.jpg'
+    image: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1000'
   },
   {
     title: 'B2B Bulk Deals',
     description: 'Special pricing for bulk institutional orders',
     icon: UserGroupIcon,
-    image: '/features/bulk-deals.jpg'
+    image: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?q=80&w=1000'
   }
 ];
 
