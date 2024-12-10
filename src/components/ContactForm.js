@@ -51,7 +51,7 @@ Shares: ${formData.shares}`;
 
             <div className="p-8">
               <h3 className="text-2xl font-bold mb-2">Interested in {stockName}</h3>
-              <p className="text-gray-600 mb-6">Fill in your details and we'll connect with you shortly</p>
+              <p className="text-gray-600 mb-6">Fill in your details and we&apos;ll connect with you shortly</p>
               
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
