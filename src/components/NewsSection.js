@@ -58,10 +58,10 @@ export default function NewsSection() {
                 />
               </div>
               <div className="p-6">
-                <p className="text-sm text-[#04dd2a] font-semibold mb-2">
+                <p className="text-sm text-[#3f6a4b] font-semibold mb-2">
                   {article.date}
                 </p>
-                <h3 className="text-xl font-bold mb-2 group-hover:text-[#04dd2a] transition-colors">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-[#3f6a4b] transition-colors">
                   {article.title}
                 </h3>
                 <p className="text-gray-600">Read more →</p>

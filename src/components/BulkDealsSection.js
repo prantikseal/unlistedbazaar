@@ -14,7 +14,9 @@ export default function BulkDealsSection() {
                 >
                     <h2 className="text-4xl font-bold mb-6">
                         Buy Bulk
-                        <span className="text-[#04dd2a]"> Deep Discounts</span> for Deep Pockets
+
+                        <br />
+                        <span className="text-[#3f6a4b]"> Deep Discounts</span> for Deep Pockets
                     </h2>
 
                     <div className="relative h-64 md:h-96 rounded-2xl overflow-hidden shadow-2xl">
@@ -32,9 +34,9 @@ export default function BulkDealsSection() {
                                 <motion.button
                                     whileHover={{ scale: 1.05 }}
                                     whileTap={{ scale: 0.95 }}
-                                    className="bg-[#04dd2a] text-white px-8 py-3 rounded-lg 
+                                    className="bg-[#3f6a4b] text-white px-8 py-3 rounded-lg 
                            shadow-lg hover:shadow-xl transition-all duration-300"
-                                    onClick={() => window.open('https://wa.me/918333008904?text=I am interested in buying from unlistedbazaar')}                           >
+                                    onClick={() => window.open('https://wa.me/917411171144?text=I am interested in buying from unlistedbazaar')}                           >
                                     Contact for Bulk Deals
                                 </motion.button>
                             </div>

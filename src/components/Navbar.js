@@ -49,7 +49,7 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-gray-700 hover:text-[#04dd2a] transition-colors"
+                                className="text-gray-700 hover:text-[#3f6a4b] transition-colors"
                             >
                                 {link.name}
                             </Link>
@@ -57,9 +57,9 @@ export default function Navbar() {
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="bg-[#04dd2a] text-white px-6 py-2 rounded-full 
-                       hover:bg-[#04dd2a]/90 transition-colors"
-                            onClick={() => window.open('https://wa.me/918333008904')}
+                            className="bg-[#3f6a4b] text-white px-6 py-2 rounded-full 
+                       hover:bg-[#3f6a4b]/90 transition-colors"
+                            onClick={() => window.open('https://wa.me/917411171144')}
                         >
                             Get Started
                         </motion.button>
@@ -93,7 +93,7 @@ export default function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className="block text-gray-700 hover:text-[#04dd2a] transition-colors"
+                                    className="block text-gray-700 hover:text-[#3f6a4b] transition-colors"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
@@ -101,9 +101,9 @@ export default function Navbar() {
                             ))}
                             <motion.button
                                 whileTap={{ scale: 0.95 }}
-                                className="w-full bg-[#04dd2a] text-white px-6 py-2 rounded-full 
-                         hover:bg-[#04dd2a]/90 transition-colors"
-                                onClick={() => window.open('https://wa.me/918333008904')}
+                                className="w-full bg-[#3f6a4b] text-white px-6 py-2 rounded-full 
+                         hover:bg-[#3f6a4b]/90 transition-colors"
+                                onClick={() => window.open('https://wa.me/917411171144')}
                             >
                                 Get Started
                             </motion.button>

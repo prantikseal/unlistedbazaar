@@ -111,7 +111,7 @@ export default function WhyChooseUs() {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-[#04dd2a] text-white px-8 py-4 rounded-lg 
+              className="bg-[#3f6a4b] text-white px-8 py-4 rounded-lg 
                        text-lg font-semibold shadow-lg hover:shadow-xl 
                        transition-all duration-300"
               onClick={() => window.open('https://wa.me/+919163602481', '_blank')}

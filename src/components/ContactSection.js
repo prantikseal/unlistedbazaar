@@ -14,11 +14,11 @@ import {
 } from 'react-icons/fa';
 
 const contactInfo = {
-  address: '123 Business District, Mumbai, Maharashtra 400001',
-  email: 'contact@unlistedbazaar.com',
-    phone: '+91 83330 08904',
+  address: 'Financial District, Hyd - TG',
+  email: 'bazaarunlisted@gmail.com',
+  phone: '+91 7411171144',
   social: [
-    { icon: FaWhatsapp, link: 'https://wa.me/918333008904', name: 'WhatsApp' },
+    { icon: FaWhatsapp, link: 'https://wa.me/917411171144', name: 'WhatsApp' },
     { icon: FaFacebook, link: '#', name: 'Facebook' },
     { icon: FaTwitter, link: '#', name: 'Twitter' },
     { icon: FaInstagram, link: '#', name: 'Instagram' },
@@ -51,7 +51,7 @@ export default function ContactSection() {
             className="space-y-8"
           >
             <div className="flex items-start space-x-4">
-              <MapPinIcon className="w-6 h-6 text-[#04dd2a] flex-shrink-0 mt-1" />
+              <MapPinIcon className="w-6 h-6 text-[#3f6a4b] flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold mb-1">Visit Us</h3>
                 <p className="text-gray-600">{contactInfo.address}</p>
@@ -59,12 +59,12 @@ export default function ContactSection() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <EnvelopeIcon className="w-6 h-6 text-[#04dd2a] flex-shrink-0 mt-1" />
+              <EnvelopeIcon className="w-6 h-6 text-[#3f6a4b] flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold mb-1">Email Us</h3>
-                <a 
+                <a
                   href={`mailto:${contactInfo.email}`}
-                  className="text-gray-600 hover:text-[#04dd2a] transition-colors"
+                  className="text-gray-600 hover:text-[#3f6a4b] transition-colors"
                 >
                   {contactInfo.email}
                 </a>
@@ -72,12 +72,12 @@ export default function ContactSection() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <PhoneIcon className="w-6 h-6 text-[#04dd2a] flex-shrink-0 mt-1" />
+              <PhoneIcon className="w-6 h-6 text-[#3f6a4b] flex-shrink-0 mt-1" />
               <div>
                 <h3 className="font-bold mb-1">Call Us</h3>
-                <a 
+                <a
                   href={`tel:${contactInfo.phone}`}
-                  className="text-gray-600 hover:text-[#04dd2a] transition-colors"
+                  className="text-gray-600 hover:text-[#3f6a4b] transition-colors"
                 >
                   {contactInfo.phone}
                 </a>
@@ -96,7 +96,7 @@ export default function ContactSection() {
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    className="bg-gray-100 p-3 rounded-full hover:bg-[#04dd2a] 
+                    className="bg-gray-100 p-3 rounded-full hover:bg-[#3f6a4b] 
                              hover:text-white transition-colors"
                   >
                     <platform.icon className="w-6 h-6" />
@@ -118,7 +118,7 @@ export default function ContactSection() {
               <input
                 type="text"
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 
-                         focus:ring-2 focus:ring-[#04dd2a] focus:border-transparent"
+                         focus:ring-2 focus:ring-[#3f6a4b] focus:border-transparent"
                 placeholder="Your name"
               />
             </div>
@@ -127,7 +127,7 @@ export default function ContactSection() {
               <input
                 type="email"
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 
-                         focus:ring-2 focus:ring-[#04dd2a] focus:border-transparent"
+                         focus:ring-2 focus:ring-[#3f6a4b] focus:border-transparent"
                 placeholder="Your email"
               />
             </div>
@@ -136,16 +136,16 @@ export default function ContactSection() {
               <textarea
                 rows={4}
                 className="w-full px-4 py-3 rounded-lg border border-gray-200 
-                         focus:ring-2 focus:ring-[#04dd2a] focus:border-transparent"
+                         focus:ring-2 focus:ring-[#3f6a4b] focus:border-transparent"
                 placeholder="Your message"
               />
             </div>
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="w-full bg-[#04dd2a] text-white py-3 rounded-lg 
-                       hover:bg-[#04dd2a]/90 transition-colors"
-              onClick={() => window.open(`https://wa.me/918333008904?text=I am interested in buying from unlistedbazaar ${contactInfo.address} ${contactInfo.email} ${contactInfo.phone}`)}
+              className="w-full bg-[#3f6a4b] text-white py-3 rounded-lg 
+                       hover:bg-[#3f6a4b]/90 transition-colors"
+              onClick={() => window.open(`https://wa.me/917411171144?text=I am interested in buying from unlistedbazaar ${contactInfo.address} ${contactInfo.email} ${contactInfo.phone}`)}
             >
               Send Message
             </motion.button>
