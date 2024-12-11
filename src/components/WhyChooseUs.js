@@ -15,7 +15,7 @@ const features = [
     title: 'Price Discovery',
     description: 'Get the most accurate and up-to-date pricing information',
     icon: ChartBarIcon,
-    image: 'https://images.unsplash.com/photo-1581090306351-549d4d93d34d?q=80&w=1000'
+    image: 'https://plus.unsplash.com/premium_photo-1723809755057-63632700868c?q=80&w=3010&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   },
   {
     title: 'Up to Date Inventory',
