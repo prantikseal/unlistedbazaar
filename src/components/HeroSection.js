@@ -13,9 +13,9 @@ export default function HeroSection() {
           className="max-w-4xl"
         >
           <div className="mb-4">
-            <span className="inline-block px-4 py-2 rounded-full bg-[#04dd2a]/10 text-[#04dd2a] font-medium">
+            <span className="inline-block px-4 py-2 rounded-full bg-[#04dd2a]/10 text-[#065f16] font-medium">
               <div className="flex items-center gap-2">
-                Unlisted Space for{' '}
+                Unlisted Sharesfor{' '}
                 <motion.span
                   className="relative inline-flex items-center"
                   animate={{ rotate: [0, -5, 5, -5, 0] }}
