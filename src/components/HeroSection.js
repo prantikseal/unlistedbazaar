@@ -1,5 +1,6 @@
 'use client';
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -12,16 +13,28 @@ export default function HeroSection() {
           className="max-w-4xl"
         >
           <div className="mb-4">
-            <span className="inline-block px-4 py-2 rounded-full bg-[#3f6a4b]/10 text-[#3f6a4b] font-medium">
-              Unlisted Shares for{' '}
-              <span className="relative inline-flex items-center">
-                <span className="relative z-10 font-bold px-3 py-1 
-                               bg-red-500 text-white 
-                               border border-dashed border-white
-                               transform -skew-x-12">
-                  SALE
-                </span>
-              </span>
+            <span className="inline-block px-4 py-2 rounded-full bg-[#04dd2a]/10 text-[#04dd2a] font-medium">
+              <div className="flex items-center gap-2">
+                Unlisted Space for{' '}
+                <motion.span
+                  className="relative inline-flex items-center"
+                  animate={{ rotate: [0, -5, 5, -5, 0] }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                >
+                  <Image
+                    src="/sale-img.png"
+                    alt="Sale"
+                    width={40}
+                    height={24}
+                    className="object-contain rotate-45 -translate-y-1"
+                    priority
+                  />
+                </motion.span>
+              </div>
             </span>
           </div>
 
