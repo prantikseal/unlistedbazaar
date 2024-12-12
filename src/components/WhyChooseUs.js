@@ -100,7 +100,7 @@ export default function WhyChooseUs() {
         >
           <div className="absolute inset-0 bg-gradient-to-r from-green-50 via-white to-green-50 -skew-y-2 transform" />
           <div className="relative z-10 py-16">
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-green-400 bg-clip-text text-transparent">
+            <h3 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-[#01380b] bg-clip-text text-transparent">
               Buying Unlisted Stock is Hard,
               <br />
               But its Price Discovery is Harder
