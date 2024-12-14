@@ -15,7 +15,7 @@ export default function HeroSection() {
           <div className="mb-4">
             <span className="inline-block px-4 py-2 rounded-full bg-[#04dd2a]/10 text-[#065f16] font-medium">
               <div className="flex items-center gap-2">
-                Unlisted Sharesfor{' '}
+                Unlisted Shares for{' '}
                 <motion.span
                   className="relative inline-flex items-center"
                   animate={{ rotate: [0, -5, 5, -5, 0] }}

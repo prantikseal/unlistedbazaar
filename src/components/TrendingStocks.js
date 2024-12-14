@@ -92,7 +92,7 @@ export default function TrendingStocks() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                 <div className="absolute top-4 right-4 bg-white rounded-lg p-2 shadow-lg">
-                  <div className="relative h-8 w-8">
+                  <div className="relative h-24 w-24">
                     <Image
                       src={stock.logo}
                       alt={`${stock.name} logo`}
