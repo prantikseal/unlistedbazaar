@@ -1,121 +1,61 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import ContactForm from './ContactForm';
 import { ArrowTrendingUpIcon } from '@heroicons/react/24/solid';
-
-const stockData = [
-  {
-    name: 'NSE',
-    price: 1800,
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000'
-  },
-  {
-    name: 'TATA CAPITAL',
-    price: 940,
-    image: 'https://images.unsplash.com/photo-1614028674026-a65e31bfd27c?q=80&w=1000'
-  },
-  {
-    name: 'POLYMATECH',
-    price: 500,
-    image: 'https://images.unsplash.com/photo-1518186285589-2f7649de83e0?q=80&w=1000'
-  },
-  {
-    name: 'OYO',
-    price: 53,
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000'
-  },
-  {
-    name: 'VIKRAM SOLAR',
-    price: 455,
-    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1000'
-  },
-  {
-    name: 'HDB FINANCIAL',
-    price: 1240,
-    image: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1000'
-  },
-  {
-    name: 'INCRED',
-    price: 420, // Added estimated price
-    image: 'https://images.unsplash.com/photo-1559526324-4b87b5e36e44?q=80&w=1000'
-  },
-  {
-    name: 'CSK',
-    price: 200,
-    image: 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=1000'
-  },
-  {
-    name: 'HDFC SECURITIES',
-    price: 11200,
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000'
-  },
-  {
-    name: 'APOLLO GREEN',
-    price: 410,
-    image: 'https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=1000'
-  },
-  {
-    name: 'MATRIX GAS',
-    price: 870,
-    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-  },
-  {
-    name: 'RRP',
-    price: 320,
-    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1000'
-  },
-  {
-    name: 'MOKAHN MEKAIN',
-    price: 240,
-    image: 'https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=1000'
-  },
-  {
-    name: 'STERLITE POWER',
-    price: 600,
-    image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1000'
-  },
-  {
-    name: 'BIRA',
-    price: 580,
-    image: 'https://images.unsplash.com/photo-1608270586620-248524c67de9?q=80&w=1000'
-  },
-  {
-    name: 'PAYMATE',
-    price: 630,
-    image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?q=80&w=1000'
-  },
-  {
-    name: 'ESDS',
-    price: 380,
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?q=80&w=1000'
-  },
-  {
-    name: 'NCDEX',
-    price: 210,
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000'
-  },
-  {
-    name: 'NAYARA',
-    price: 620,
-    image: 'https://images.unsplash.com/photo-1646836724029-61037aed37fb?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-  },
-  {
-    name: 'SBI CARDS',
-    price: 2800,
-    image: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?q=80&w=1000'
-  },
-  {
-    name: 'HEXAWARE',
-    price: 1030,
-    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000'
-  }
-];
+import { fetchStockData } from '@/utils/sheets';
 
 export default function TrendingStocks() {
   const [selectedStock, setSelectedStock] = useState(null);
   const [showContactForm, setShowContactForm] = useState(false);
+  const [stocks, setStocks] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadStocks = async () => {
+      try {
+        const data = await fetchStockData();
+        console.log('Fetched stocks:', data);
+        if (data.length === 0) {
+          setError('No stocks data available');
+        } else {
+          setStocks(data);
+        }
+      } catch (err) {
+        console.error('Error loading stocks:', err);
+        setError('Failed to load stocks data');
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadStocks();
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-[#3f6a4b]"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-red-500 text-center">
+          <p className="text-xl font-semibold">{error}</p>
+          <button 
+            onClick={() => window.location.reload()} 
+            className="mt-4 px-4 py-2 bg-[#3f6a4b] text-white rounded-lg hover:bg-[#3f6a4b]/90"
+          >
+            Retry
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -133,7 +73,7 @@ export default function TrendingStocks() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {stockData.map((stock, index) => (
+          {stocks.map((stock, index) => (
             <motion.div
               key={stock.name}
               initial={{ opacity: 0, y: 20 }}
@@ -145,12 +85,22 @@ export default function TrendingStocks() {
             >
               <div className="relative h-48">
                 <Image
-                  src={stock.image}
+                  src={stock.thumbnail}
                   alt={stock.name}
                   fill
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                <div className="absolute top-4 right-4 bg-white rounded-lg p-2 shadow-lg">
+                  <div className="relative h-8 w-8">
+                    <Image
+                      src={stock.logo}
+                      alt={`${stock.name} logo`}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                </div>
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-xl font-bold text-white mb-2">{stock.name}</h3>
                   <div className="flex items-baseline gap-1">
