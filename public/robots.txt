@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://unlistedbazaar.com/sitemap.xml
+Sitemap: https://unlistedbazaar.net/sitemap.xml
 
 # Disallow admin routes
 Disallow: /admin/ 
