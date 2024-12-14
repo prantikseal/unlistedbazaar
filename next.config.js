@@ -22,6 +22,8 @@ const nextConfig = {
       }
     ],
   },
+  poweredByHeader: false,
+  generateEtags: true,
 }
 
 module.exports = nextConfig 

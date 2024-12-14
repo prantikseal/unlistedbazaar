@@ -31,9 +31,21 @@ const geistMono = localFont({
                                 <meta name="theme-color" content="#ffffff"> */}
 
 export const metadata = {
-  title: "Unlisted Bazaar",
-  description: "Unlisted Bazaar - Unlisted Shares, ESOPS, Pre-IPO, Startup Ecosystem",
-};
+  metadataBase: new URL('https://unlistedbazaar.com'),
+  title: 'Unlisted Bazaar - Trade Unlisted Shares in India',
+  description: 'Buy and sell unlisted shares in India. Get the best prices for unlisted stocks and pre-IPO shares.',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+}
 
 export default function RootLayout({ children }) {
   return (
