@@ -1,5 +1,5 @@
 export default async function sitemap() {
-  const baseUrl = 'https://unlistedbazaar.com';
+  const baseUrl = 'https://unlistedbazaar.net';
 
   // Get stock data for dynamic routes
   const stocks = await fetch('https://docs.google.com/spreadsheets/d/1K7FaGkK_DIWDH4jchIsmKC_57EWSCegoL7nkUqDC-B8/gviz/tq?tqx=out:json&sheet=stocks')
