@@ -53,7 +53,7 @@ export default function HeroSection() {
             whileTap={{ scale: 0.95 }}
             className="bg-[#3f6a4b] text-white px-8 py-4 rounded-lg 
                      shadow-lg hover:shadow-xl transition-all duration-300"
-            onClick={() => window.open('https://wa.me/917411171144?text=I am interested in buying from unlistedbazaar')}
+            onClick={() => window.open('https://wa.me/916366662441?text=I am interested in buying from unlistedbazaar')}
           >
             Start Investing
           </motion.button>

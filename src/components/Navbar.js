@@ -59,7 +59,7 @@ export default function Navbar() {
                             whileTap={{ scale: 0.95 }}
                             className="bg-[#3f6a4b] text-white px-6 py-2 rounded-full 
                        hover:bg-[#3f6a4b]/90 transition-colors"
-                            onClick={() => window.open('https://wa.me/917411171144')}
+                            onClick={() => window.open('https://wa.me/916366662441')}
                         >
                             Get Started
                         </motion.button>
@@ -103,7 +103,7 @@ export default function Navbar() {
                                 whileTap={{ scale: 0.95 }}
                                 className="w-full bg-[#3f6a4b] text-white px-6 py-2 rounded-full 
                          hover:bg-[#3f6a4b]/90 transition-colors"
-                                onClick={() => window.open('https://wa.me/917411171144')}
+                                onClick={() => window.open('https://wa.me/916366662441')}
                             >
                                 Get Started
                             </motion.button>

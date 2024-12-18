@@ -16,9 +16,9 @@ import {
 const contactInfo = {
   address: 'Financial District, Hyd - TG',
   email: 'bazaarunlisted@gmail.com',
-  phone: '+91 7411171144',
+  phone: '+91 6366662441',
   social: [
-    { icon: FaWhatsapp, link: 'https://wa.me/917411171144', name: 'WhatsApp' },
+    { icon: FaWhatsapp, link: 'https://wa.me/916366662441', name: 'WhatsApp' },
     { icon: FaFacebook, link: '#', name: 'Facebook' },
     { icon: FaTwitter, link: '#', name: 'Twitter' },
     { icon: FaInstagram, link: '#', name: 'Instagram' },
@@ -145,7 +145,7 @@ export default function ContactSection() {
               whileTap={{ scale: 0.98 }}
               className="w-full bg-[#3f6a4b] text-white py-3 rounded-lg 
                        hover:bg-[#3f6a4b]/90 transition-colors"
-              onClick={() => window.open(`https://wa.me/917411171144?text=I am interested in buying from unlistedbazaar ${contactInfo.address} ${contactInfo.email} ${contactInfo.phone}`)}
+              onClick={() => window.open(`https://wa.me/916366662441?text=I am interested in buying from unlistedbazaar ${contactInfo.address} ${contactInfo.email} ${contactInfo.phone}`)}
             >
               Send Message
             </motion.button>

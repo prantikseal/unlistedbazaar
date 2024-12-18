@@ -17,7 +17,7 @@ Name: ${formData.name}
 Mobile: ${formData.mobile}
 Shares: ${formData.shares}`;
 
-    window.open(`https://wa.me/917411171144?text=${encodeURIComponent(message)}`);
+    window.open(`https://wa.me/916366662441?text=${encodeURIComponent(message)}`);
     onClose();
   };
 
@@ -72,7 +72,7 @@ Shares: ${formData.shares}`;
                   <input
                     type="tel"
                     required
-                    placeholder="+91 98765 43210"
+                    placeholder="+91  6366662441"
                     className="w-full px-4 py-3 rounded-lg border border-gray-200 
                              focus:ring-2 focus:ring-[#3f6a4b] focus:border-transparent
                              transition-all duration-200 outline-none"
