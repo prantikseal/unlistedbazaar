@@ -13,6 +13,10 @@ export default function TrendingStocks() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const isComingSoon = (stockName) => {
+    return stockName.toLowerCase().includes('coming soon');
+  };
+
   useEffect(() => {
     const loadStocks = async () => {
       try {
@@ -46,8 +50,8 @@ export default function TrendingStocks() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-red-500 text-center">
           <p className="text-xl font-semibold">{error}</p>
-          <button 
-            onClick={() => window.location.reload()} 
+          <button
+            onClick={() => window.location.reload()}
             className="mt-4 px-4 py-2 bg-[#3f6a4b] text-white rounded-lg hover:bg-[#3f6a4b]/90"
           >
             Retry
@@ -81,8 +85,15 @@ export default function TrendingStocks() {
               transition={{ delay: index * 0.1 }}
               className="bg-white rounded-xl shadow-[0_0_20px_rgba(0,0,0,0.08)] 
                          overflow-hidden hover:shadow-2xl transition-all duration-300
-                         border border-gray-100"
+                         border border-gray-100 relative"
             >
+              {isComingSoon(stock.name) && (
+                <div className="absolute -left-12 top-6 -rotate-45 z-10">
+                  <div className="bg-yellow-500 text-white py-1 px-12 text-sm font-semibold shadow-lg">
+                    Coming Soon
+                  </div>
+                </div>
+              )}
               <div className="relative h-48">
                 <Image
                   src={stock.thumbnail}
@@ -112,33 +123,51 @@ export default function TrendingStocks() {
                 </div>
               </div>
               <div className="p-6">
-                <div className="flex gap-3">
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => {
-                      setSelectedStock(stock);
-                      setShowContactForm(true);
-                    }}
-                    className="flex-1 bg-[#3f6a4b] text-white py-3 rounded-lg 
-                             hover:bg-[#3f6a4b]/90 transition-colors
-                             font-semibold shadow-lg shadow-[#3f6a4b]/20"
-                  >
-                    Buy Now
-                  </motion.button>
-                  <motion.button
-                    whileHover={{ scale: 1.02 }}
-                    whileTap={{ scale: 0.98 }}
-                    onClick={() => {
-                      setSelectedStock(stock);
-                      setShowContactForm(true);
-                    }}
-                    className="flex-1 border-2 border-[#3f6a4b] text-[#3f6a4b] py-3 
+                <div className="flex gap-2 flex-wrap">
+                  {
+                    isComingSoon(stock.name) ? (
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        onClick={() => {
+                          setSelectedStock(stock);
+                          setShowContactForm(true);
+                        }}
+                        className="w-full mt-2 border-2 border-[#3f6a4b] text-[#3f6a4b] py-3 
                              rounded-lg hover:bg-[#3f6a4b]/10 transition-colors
                              font-semibold"
-                  >
-                    Sell
-                  </motion.button>
+                      >
+                        Enquire
+                      </motion.button>
+                    ) : (<>
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        onClick={() => {
+                          setSelectedStock(stock);
+                          setShowContactForm(true);
+                        }}
+                        className="flex-1 bg-[#3f6a4b] text-white py-3 rounded-lg 
+                             hover:bg-[#3f6a4b]/90 transition-colors
+                             font-semibold shadow-lg shadow-[#3f6a4b]/20"
+                      >
+                        Buy Now
+                      </motion.button>
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        onClick={() => {
+                          setSelectedStock(stock);
+                          setShowContactForm(true);
+                        }}
+                        className="flex-1 border-2 border-[#3f6a4b] text-[#3f6a4b] py-3 
+                             rounded-lg hover:bg-[#3f6a4b]/10 transition-colors
+                             font-semibold"
+                      >
+                        Sell
+                      </motion.button>
+                    </>)
+                  }
                 </div>
               </div>
             </motion.div>
