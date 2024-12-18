@@ -4,22 +4,22 @@ import Image from 'next/image';
 
 const newsArticles = [
   {
-    title: 'The Rise of Unlisted Securities in India',
+    title: 'Nuvama Wealth buys OYO shares worth Rs 100 cr in secondary market',
     date: 'March 15, 2024',
-    image: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?q=80&w=1000',
-    link: 'https://www.moneycontrol.com/news/business/markets/unlisted-shares-what-are-they-and-should-you-invest-in-them-10308071.html'
+    image: 'https://ik.imagekit.io/unlistedbazaar/stock-images/1699943813-7737_4x6AF6j8O.avif',
+    link: 'https://www.business-standard.com/companies/news/nuvama-wealth-buys-oyo-shares-worth-rs-100-cr-in-secondary-market-124121300537_1.html'
   },
   {
-    title: 'Why Pre-IPO Investments are Gaining Popularity',
-    date: 'March 10, 2024',
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=1000',
-    link: 'https://economictimes.indiatimes.com/markets/ipos/fpos/pre-ipo-placement-meaning-benefits-risks-and-how-to-invest/articleshow/98163770.cms'
+    title: 'Zepto to become profitable in FY26, hopeful for IPO plans next year: CEO Aadit Palicha',
+    date: 'December 10, 2024',
+    image: 'https://ik.imagekit.io/unlistedbazaar/stock-images/Zepto_1651514445009_1733837289539__KodeixF_.avif',
+    link: 'https://www.livemint.com/companies/news/zepto-to-become-pat-positive-in-fy26-hopeful-for-ipo-plans-next-year-ceo-aadit-palicha-11733836929690.html'
   },
   {
     title: 'Understanding the Unlisted Securities Market',
-    date: 'March 5, 2024',
-    image: 'https://images.unsplash.com/photo-1642543492481-44e81e3914a7?q=80&w=1000',
-    link: 'https://www.sebi.gov.in/legal/circulars/jan-2024/trading-in-unlisted-securities-by-alternative-investment-funds_81213.html'
+    date: 'December 10, 2024',
+    image: 'https://ik.imagekit.io/unlistedbazaar/stock-images/20241206071211_bse_nse_stockmarket_nifty_sensex-2_83FYfup4m2.avif',
+    link: 'https://www.moneycontrol.com/news/business/ipo/rs-1-5-lakh-crore-big-names-among-strong-ipo-pipeline-for-2025-12886343.html/amp'
   }
 ];
 
