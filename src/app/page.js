@@ -12,7 +12,7 @@ import { useState } from "react";
 
 export default function Home() {
 
-  const [isPaid, setIsPaid] = useState(false); // This should be fetched from your backend/database
+  const [isPaid, setIsPaid] = useState(false);
 
   // Early return if payment is not completed
   if (!isPaid) {
